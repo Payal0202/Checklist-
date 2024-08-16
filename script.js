@@ -23,7 +23,7 @@ function addTask() {
     span.textContent = taskText;
 
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
+    deleteButton.textContent = 'Clear';
     deleteButton.className = 'delete';
     deleteButton.onclick = function() {
         deleteTask(this.parentElement);
@@ -121,7 +121,7 @@ function createTaskElement(text, checked) {
     span.textContent = text;
 
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
+    deleteButton.textContent = 'Clear';
     deleteButton.className = 'delete';
     deleteButton.onclick = function() {
         deleteTask(this.parentElement);
