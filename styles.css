@@ -33,7 +33,7 @@ h1, h2 {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 button {
@@ -44,7 +44,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 50px;
 }
 
@@ -80,7 +80,7 @@ li.done span {
 
 li span {
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 16px;
     color: #333;
     margin-left: 10px; /* Adds space between checkbox and text */
 }
