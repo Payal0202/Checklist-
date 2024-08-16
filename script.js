@@ -20,8 +20,16 @@ function addTask() {
     const span = document.createElement('span');
     span.textContent = taskText;
 
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.className = 'delete'; // Add this line
+    deleteButton.onclick = function() {
+        deleteTask(this.parentElement);
+    };
+
     li.appendChild(checkbox);
     li.appendChild(span);
+    li.appendChild(deleteButton);
 
     taskList.appendChild(li);
     taskInput.value = '';
@@ -37,4 +45,8 @@ function moveTaskBackToTodo(taskElement) {
     const taskList = document.getElementById('task-list');
     taskElement.classList.remove('done');
     taskList.appendChild(taskElement);
+}
+
+function deleteTask(taskElement) {
+    taskElement.remove();
 }
