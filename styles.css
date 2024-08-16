@@ -92,3 +92,22 @@ li input[type="checkbox"] {
     margin: 0; /* Remove default margin */
     cursor: pointer; /* Show pointer on hover */
 }
+
+/* New CSS for Delete Button */
+li button.delete {
+    width: auto;
+    padding: 5px 10px; /* Smaller padding */
+    background-color: #d9534f; /* Bootstrap's danger color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size */
+    margin-left: 10px; /* Space between text and delete button */
+    /* margin-top: 10px; */
+    margin-bottom: 0%;
+}
+
+li button.delete:hover {
+    background-color: #c9302c; /* Darker shade on hover */
+}
