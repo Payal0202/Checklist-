@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checklist</h1>
+        <input type="text" id="new-task" placeholder="Add a new task">
+        <button onclick="addTask()">Add Task</button>
+        
+        <h2>To Do</h2>
+        <ul id="task-list">
+            <!-- Tasks will be added here -->
+        </ul>
+
+        <h2>Done</h2>
+        <ul id="done-list">
+            <!-- Completed tasks will be moved here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
